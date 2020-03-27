@@ -113,7 +113,7 @@ function TextFrame({
     const handleMouseUp = (evt) => {
       const timingDifference = window.performance.now() - clickTime;
 
-      if (timingDifference > 300) {
+      if (timingDifference > 150) {
         // Only short clicks count.
         return;
       }
