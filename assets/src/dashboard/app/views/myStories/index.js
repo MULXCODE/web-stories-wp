@@ -127,11 +127,7 @@ function MyStories() {
               <StoryGrid>
                 {filteredStories.map((story) => (
                   <CardGridItem key={story.id}>
-                    <CardPreviewContainer
-                      onOpenInEditorClick={() => {}}
-                      onPreviewClick={() => {}}
-                      previewSource={'http://placeimg.com/225/400/nature'}
-                    >
+                    <CardPreviewContainer editUrl={story.editStoryUrl}>
                       <PreviewPage page={story.pages[0]} />
                     </CardPreviewContainer>
                     <CardTitle
